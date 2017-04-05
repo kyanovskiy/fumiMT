@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FumiWare!</title>
+
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../src/js/mTheoryApi.js"></script>
+
+      <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+  </head>
+
+  <body class="login">
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+        <a class="hiddenanchor" id="forgotL"></a>
+
+        <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form>
+              <div ><img style="padding-bottom: 10px;height: 75px;" src="images/Fumiware_logo_big.png" alt="Welcome to mTheory" height="50px" width="230px">
+              </div>
+                <br>
+              <div>
+                <input type="text" id="login" class="form-control" placeholder="Username" required="" />
+              </div>
+              <div>
+                <input type="password" id="password" class="form-control" placeholder="Password" required="" />
+              </div>
+                <div class="checkbox" style="float: left;margin-top: 0px">
+                    <label>
+                        <input type="checkbox" value="">Remember me
+                    </label>
+                </div>
+                <div class="clearfix"></div>
+
+                <div>
+                <a class="btn btn-default submit">LOGIN</a>
+              </div>
+                <br>
+              <div class="clearfix"></div>
+
+                <div class="separator">
+                <p class="change_link">
+                    <a class="to_forgot" href="#forgotL">Forgot Password.</a>
+                    <br>
+                    <a href="#signup" class="to_register"> Register </a>
+
+                </p>
+
+                <div class="clearfix"></div>
+                <br />
+
+                <div>
+                  <!--<h1><img style="height: 42px;" src="images/Icon_100x100px.png" alt="Fumi"> FumiWare mTheory</h1>-->
+                  <p>Copyright © 2017 FumiWare. All rights reserved. Interface is based on Gentelella Alela.</p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <div id="register" class="animate form registration_form">
+          <section class="login_content">
+            <form>
+                <div ><img style="padding-bottom: 10px;height: 75px;" src="images/Fumiware_logo_big.png" alt="Welcome to mTheory" height="50px" width="230px"></div>
+                 <br>
+                    <!--<h1>Create Account</h1>-->
+              <div class="form-group">
+                <input type="text" style="margin-bottom: auto;" class="form-control" placeholder="Username" aria-describedby="nameHelp" required="" />
+                  <small id="nameHelp" class="form-text text-muted">You will use it to access FumiWare website. Will be displayed on your reviews</small>
+
+              </div>
+              <div class="form-group">
+                <input type="email" style="margin-bottom: auto;" class="form-control" placeholder="Email" aria-describedby="emailHelp" required="" />
+                  <small id="emailHelp" class="form-text text-muted">We will use it for one time verification and password recovery</small>
+
+              </div>
+              <div class="form-group">
+                <input type="password" style="margin-bottom: auto;" class="form-control" placeholder="Password" aria-describedby="passHelp" required="" />
+                  <small id="passHelp" class="form-text text-muted">At least 8 characters long</small>
+
+              </div>
+                <div>
+                    <input type="password" class="form-control" placeholder="Confirm password" required="" />
+                </div>
+                <!--<div class="col-md-9 col-sm-9 col-xs-12">-->
+                <div class="checkbox" style="float: left;">
+                    <label>
+                        <input type="checkbox" value="">I live in Canada
+                    </label>
+                </div>
+                <div class="checkbox" style="float: left;">
+                    <label>
+                        <input type="checkbox" value="">I accept FumiWare Terms and Conditions.
+                    </label>
+                </div>
+                <div class="checkbox" style="float: left;">
+                    <label>
+                        <input type="checkbox" value="">I want to receive updates from FumiWare
+                    </label>
+                </div>
+                <!--</div>-->
+                <div class="clearfix"></div>
+
+                <div>
+                <a class="btn btn-default submit" href="index.html">REGISTER</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">
+                  <a href="#signin" class="to_register">Existing user? Log in </a>
+                </p>
+                  <p class="change_link">
+                      <a href="#" class="to_register"> Register with Facebook account </a>
+                  </p>
+                <div class="clearfix"></div>
+                <br />
+
+                <div>
+                  <!--<h1><img style="height: 42px;" src="images/Icon_100x100px.png" alt="Fumi"> Gentelella Alela!</h1>-->
+                  <p>Copyright © 2017 FumiWare. All rights reserved. Interface is based on Gentelella Alela.</p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+            <div id="forgot" class="animate form forgot_form">
+                <section class="login_content">
+                    <form>
+                        <div ><img style="padding-bottom: 10px;height: 75px;" src="images/Fumiware_logo_big.png" alt="Welcome to mTheory" height="50px" width="230px">
+                        </div>
+                        <br>
+                            <!--<h1>Forgot password</h1>-->
+                        <div>
+                            <input type="email" class="form-control" placeholder="Email" required="" />
+                        </div>
+
+                        <div>
+                            <a class="btn btn-default submit" href="index.html">RESET</a>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="separator">
+                            <p class="change_link">Already a member ?
+                                <a href="#signin" class="to_register"> Log in </a>
+                            </p>
+
+                            <div class="clearfix"></div>
+                            <br />
+
+                            <div>
+                                <!--<h1><img style="height: 42px;" src="images/Icon_100x100px.png" alt="Fumi"> Gentelella Alela!</h1>-->
+                                <p>Copyright © 2017 FumiWare. All rights reserved. Interface is based on Gentelella Alela.</p>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+      </div>
+    </div>
+    <script>
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            $(".submit").click(function(){
+                var log= $("#login").val();
+                var pas=$("#password").val();
+                //mTheoryApi.login("XOIa9pNSTR","770424c7fefa7f454a04f88e1059c140","doctor","tard1s",function(){
+                mTheoryApi.login("XOIa9pNSTR","770424c7fefa7f454a04f88e1059c140",log,pas,function(){
+                    //alert("Ok");
+                    window.location.href = "plain_page.html";
+
+                    //plain_page.html
+                }, function () {
+                    alert("Authentication failure"+mTheoryApi.loginData.errorMsg);
+                });
+
+            });
+
+
+        });
+    </script>
+  </body>
+</html>
