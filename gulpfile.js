@@ -11,7 +11,7 @@ var DEST = 'build/';
 gulp.task('scripts', function() {
     return gulp.src([
         'src/js/helpers/*.js',
-        'src/js/*.js',
+        'src/js/*.js'
       ])
       .pipe(concat('custom.js'))
       .pipe(gulp.dest(DEST+'/js'))
